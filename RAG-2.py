@@ -26,7 +26,7 @@ def initialize_qa_chain(k_documents=4):  # Add k_documents parameter
     retriever = vectorstore.as_retriever(search_kwargs={"k": k_documents})
     
     model = ChatOpenAI(
-        model="gpt-4",
+        model="gpt-4o",
         temperature=0
     )
     
